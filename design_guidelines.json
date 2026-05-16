@@ -1,0 +1,146 @@
+{
+  "project_name": "ATOMQUEST HACKATHON 1.0 - Goal Setting & Tracking Portal",
+  "theme_and_archetype": {
+    "theme": "dark",
+    "archetype": "Archetype 4 (Swiss & High-Contrast)",
+    "description": "A serious, modern, and trustworthy HR/performance tool. Instead of generic playful aesthetics or 'fintech-bro' neon, we use a deep obsidian base with stark white and functional amber accents. The design focuses on extreme clarity, dense 'Control Room' grids, and unapologetic contrast."
+  },
+  "typography": {
+    "fonts": [
+      {
+        "role": "headings",
+        "name": "Cabinet Grotesk",
+        "url": "https://fonts.cdnfonts.com/css/cabinet-grotesk",
+        "fallback": "sans-serif",
+        "usage": "Use for all H1, H2, and H3 headings. Ensure font-weight is 700 or 800 to give authoritative, sharp presence."
+      },
+      {
+        "role": "body",
+        "name": "Satoshi",
+        "url": "https://fonts.cdnfonts.com/css/satoshi",
+        "fallback": "sans-serif",
+        "usage": "Use for all UI copy, paragraphs, and standard labels."
+      },
+      {
+        "role": "data",
+        "name": "JetBrains Mono",
+        "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap",
+        "fallback": "monospace",
+        "usage": "CRITICAL: Use for all numerical data, percentages, weightages (e.g. '10%'), targets, and check-in inputs. Makes data alignment perfect and feels extremely professional."
+      }
+    ],
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl font-extrabold tracking-tight leading-none",
+      "h2": "text-2xl sm:text-3xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-bold tracking-tight",
+      "h4": "text-lg font-bold tracking-tight",
+      "body": "text-sm sm:text-base leading-relaxed text-zinc-300",
+      "label": "text-xs font-semibold tracking-[0.1em] uppercase text-zinc-500",
+      "data_large": "font-mono text-3xl font-bold text-white",
+      "data_small": "font-mono text-sm text-zinc-300"
+    }
+  },
+  "color_system": {
+    "backgrounds": {
+      "app_bg": "#09090b",
+      "surface": "#121214",
+      "surface_hover": "#1c1c1f",
+      "glass": "bg-zinc-950/60 backdrop-blur-xl"
+    },
+    "borders": {
+      "default": "border-zinc-800",
+      "focus": "border-amber-400/50",
+      "grid_lines": "border-zinc-900"
+    },
+    "text": {
+      "primary": "#ffffff",
+      "secondary": "#a1a1aa",
+      "muted": "#52525b",
+      "inverse": "#09090b"
+    },
+    "actions": {
+      "primary_bg": "#ffffff",
+      "primary_text": "#09090b",
+      "primary_hover": "#e4e4e7",
+      "accent_bg": "#fbbf24",
+      "accent_text": "#451a03",
+      "accent_hover": "#f59e0b"
+    },
+    "status": {
+      "not_started": {
+        "bg": "bg-zinc-800",
+        "text": "text-zinc-300",
+        "border": "border-zinc-700"
+      },
+      "on_track": {
+        "bg": "bg-amber-400/10",
+        "text": "text-amber-400",
+        "border": "border-amber-400/30",
+        "chart_color": "#fbbf24"
+      },
+      "completed": {
+        "bg": "bg-emerald-500/10",
+        "text": "text-emerald-400",
+        "border": "border-emerald-500/30",
+        "chart_color": "#34d399"
+      },
+      "at_risk": {
+        "bg": "bg-red-500/10",
+        "text": "text-red-400",
+        "border": "border-red-500/30",
+        "chart_color": "#ef4444"
+      }
+    }
+  },
+  "layout_and_spacing": {
+    "global_geometry": "Sharp corners. Override shadcn's default rounded-md to rounded-none or rounded-sm. Dashboards look more authoritative when squared off.",
+    "dashboard_grid": {
+      "type": "The Control Room Grid",
+      "gap": "gap-1 sm:gap-4",
+      "logic": "Use rigid column grids. The main tracking panel should take up 3/4 width, sidebars or quick actions 1/4 width."
+    },
+    "surface_strategy": "Grid Borders (The Technical Look). For the dashboard, utilize border-collapse styles or right/bottom borders only to give an exposed skeleton feel. Avoid floating shadow cards."
+  },
+  "component_rules": {
+    "buttons": "Square edges (rounded-sm). High contrast. Primary buttons are white with black text. No soft drop shadows; rely on stark contrast.",
+    "inputs": "Square edges. Background should match surface color, borders zinc-800. On focus, ring with amber-400 (not blue).",
+    "tables": "Dense. Use smaller paddings (py-2 px-3) to fit multiple goals. Use JetBrains Mono for weightage and target columns. Align numeric columns to the right.",
+    "progress_bars": "1px to 2px tall. Extremely thin and sharp. Color maps to status (Amber for On Track, Emerald for Completed). No rounded ends.",
+    "charts": "Recharts. Use sharp linear lines, no curved splines. Use the status colors provided. Tooltips must have dark glassmorphism backgrounds.",
+    "navigation": "Side navigation is preferred for dense dashboards. If top nav, use Crystal Glassmorphism (bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-800)."
+  },
+  "media_urls": {
+    "login_hero_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/4a7c524d-ef31-4e20-a341-89debbd68151/images/bf47680f34680b71ac444695cf0c006bf95590f9f011fe9e8450aedf35f226b4.png",
+      "description": "Abstract dark architectural 3d geometry for the Login/Landing page split-screen background."
+    },
+    "analytics_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/4a7c524d-ef31-4e20-a341-89debbd68151/images/700d1608d3e0344c11ea8cc60ed6b84ad0c80c5c34274def48255edb0b6a2b3a.png",
+      "description": "Topographic map lines glowing for a subtle header background in the Analytics or Completion dashboard."
+    },
+    "avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1685760259914-ee8d2c92d2e0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBjb3Jwb3JhdGUlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3ODgzMjI4M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Manager Avatar"
+      },
+      {
+        "url": "https://images.pexels.com/photos/14589344/pexels-photo-14589344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Admin Avatar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjb3Jwb3JhdGUlMjBoZWFkc2hvdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3ODgzMjI4M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Employee Avatar"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Strictly apply data-testid to all interactive elements, form fields, tab triggers, and buttons (e.g. data-testid='goal-submit-button', data-testid='weightage-input').",
+    "In tailwind.config.js, ensure fonts are added as 'heading', 'body', and 'mono'.",
+    "Install lucide-react (if not present) and @phosphor-icons/react for dense dashboards.",
+    "When rendering the multi-goal creation form, ensure validation logic for weightage summing to 100% is clearly visible to the user as they type, leveraging color_system.status.at_risk if it exceeds 100%.",
+    "Do not use generic Shadcn shadow classes; use strict border-zinc-800 for visual separation.",
+    "For the audit trail timeline, use a left-aligned vertical border (border-l-2 border-zinc-800) with absolute positioned indicator dots.",
+    "Do NOT use .tsx, ensure everything is in standard .js/.jsx syntax as per the project environment.",
+    "Use Phosphor icons for dense dashboard layouts if possible, otherwise stick to Lucide but maintain consistent sizing (16px/20px)."
+  ]
+}
